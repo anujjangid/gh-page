@@ -1,0 +1,27 @@
+{
+  "name": "gh-page",
+  "version": "1.0.0",
+  "description": "git gh pages",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujjangid/gh-pages.git"
+  },
+  "author": "Anuj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anujjangid/gh-pages/issues"
+  },
+  "homepage": "https://github.com/anujjangid/gh-pages#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "parcel-bundler": "^1.12.2"
+  }
+}
